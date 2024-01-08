@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Button } from "../Button";
+import { Button } from "../button/Button";
 import { TypeAnimation } from "react-type-animation";
 
 const MainPage = () => {
@@ -47,10 +47,13 @@ const MainPage = () => {
         {/* <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative"> */}
         <Image
           src="/images/sam.jpg"
-          alt="me"
+          alt="Sam Avatar"
+          priority
+          style={{ width: "auto", height: "auto" }}
           width={300}
           height={300}
           // className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          className="rounded-3xl"
         />
         {/* </div> */}
       </div>
