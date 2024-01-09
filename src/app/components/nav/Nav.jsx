@@ -11,7 +11,7 @@ const Nav = () => {
 
   return (
     <nav className="fixed right-0 left-0 top-0 z-10 bg-[#121212] bg-opacity-100">
-      <div className="flex flex-wrap items-center justify-between px-4 pt-4">
+      <div className="flex flex-wrap items-center justify-between px-4 pt-4 pb-4 lg:px-16">
         <Link href={"/"} className="text-2xl md:text-4xl font-semibold">
           LOGO
         </Link>

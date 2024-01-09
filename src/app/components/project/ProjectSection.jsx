@@ -16,7 +16,7 @@ function ProjectSection() {
   });
 
   return (
-    <>
+    <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8">
         My Projects
       </h2>
@@ -47,7 +47,7 @@ function ProjectSection() {
           isSelected={tag === "All"}
         /> */}
       </div>
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <div className="grid md:grid-cols-2 gap-8 md:gap-12">
         {filteredProjects.map((project) => {
           return (
             <ProjectCard
@@ -61,7 +61,7 @@ function ProjectSection() {
           );
         })}
       </div>
-    </>
+    </section>
   );
 }
 
