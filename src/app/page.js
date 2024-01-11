@@ -4,6 +4,7 @@ import About from "./components/about/About";
 import ProjectSection from "./components/project/ProjectSection";
 import ContactSection from "./components/contact/ContactSection";
 import Footer from "./components/footer/Footer";
+import AchievementSection from "./components/achievements/AchievementsSection";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Nav />
       <div className="container mx-auto mt-24">
         <MainPage />
+        <AchievementSection />
         <About />
         <ProjectSection />
         <ContactSection />

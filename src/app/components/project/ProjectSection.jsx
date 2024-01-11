@@ -38,8 +38,8 @@ function ProjectSection() {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name={"Hosted"}
-          isSelected={tag === "Hosted"}
+          name={"Game"}
+          isSelected={tag === "Game"}
         />
         {/* <ProjectTag
           onClick={handleTagChange}

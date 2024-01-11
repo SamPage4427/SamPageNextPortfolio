@@ -29,7 +29,7 @@ function About() {
           <p className="text-base lg:text-lg">
             I am a software engineer with a passion for creating ...{" "}
           </p>
-          <div className="flex flex-row mt-8">
+          <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
