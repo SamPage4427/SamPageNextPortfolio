@@ -1,7 +1,36 @@
+"use client";
 import { GitHub, LinkedIn } from "@mui/icons-material";
 import Link from "next/link";
+import { useState } from "react";
 
 function ContactSection() {
+  const [emailSent, setEmailSent] = useState(false);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = {
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    };
+    const dataFormatJSON = JSON.stringify(data);
+    const endpoint = "/api/send";
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: dataFormatJSON,
+    };
+
+    const response = await fetch(endpoint, options);
+    const resData = await response.json();
+
+    if (resData.status === 200) {
+      console.log("Message sent.");
+      setEmailSent(true);
+    }
+  };
+
   return (
     <section
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-8 md:gap-4 relative"
@@ -27,7 +56,7 @@ function ContactSection() {
         </div>
       </div>
       <div className="z-10">
-        <form className="flex flex-col">
+        <form className="flex flex-col" onSubmit={handleSubmit}>
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -36,6 +65,7 @@ function ContactSection() {
               Email:
             </label>
             <input
+              name="email"
               type="email"
               id="email"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-grey-100 text-sm rounded-lg block w-full p-2.5"
@@ -51,6 +81,7 @@ function ContactSection() {
               Subject:
             </label>
             <input
+              name="subject"
               type="text"
               id="subject"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-grey-100 text-sm rounded-lg block w-full p-2.5"
@@ -79,6 +110,11 @@ function ContactSection() {
           >
             Send Message
           </button>
+          {emailSent && (
+            <p className="text-green-500 text-sm mt-2">
+              Email sent successfully!
+            </p>
+          )}
         </form>
       </div>
     </section>

@@ -1,19 +1,21 @@
-// import { EmailTemplate } from "../../../components/EmailTemplate";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const fromEmail = process.env.FROM_EMAIL;
 
-export async function Post() {
+export async function POST(req, res) {
+  const { email, subject, message } = await req.json();
+  console.log(email, subject, message);
   try {
     const data = await resend.emails.send({
-      from: "Sam <sampage4427@gmail.com",
-      to: ["sampage4427@gmail.com"],
-      subject: "Hello World",
-      //   react: EmailTemplate({ firstName: "Sam" }),
+      from: fromEmail,
+      to: ["sampage4427@gmail.com", email],
+      subject: subject,
       react: (
         <>
-          <p>Email Body</p>
+          <h1>{subject}</h1>
+          <p>{message}</p>
         </>
       ),
     });
