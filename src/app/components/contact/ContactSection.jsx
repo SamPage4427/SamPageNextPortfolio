@@ -5,6 +5,7 @@ import { useState } from "react";
 
 function ContactSection() {
   const [emailSent, setEmailSent] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = {
@@ -12,20 +13,20 @@ function ContactSection() {
       subject: e.target.subject.value,
       message: e.target.message.value,
     };
-    const dataFormatJSON = JSON.stringify(data);
+    const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
+
     const options = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: dataFormatJSON,
+      body: JSONdata,
     };
 
     const response = await fetch(endpoint, options);
-    const resData = await response.json();
 
-    if (resData.status === 200) {
+    if (response.status === 200) {
       console.log("Message sent.");
       setEmailSent(true);
     }
@@ -106,7 +107,12 @@ function ContactSection() {
           </div>
           <button
             type="submit"
-            className="bg-gradient-to-br from-red-700 via-orange-500 to-amber-500 hover:text-slate-300 border border-red-500 hover:border-white rounded-lg p-2.5 font-medium text-lg"
+            disabled={emailSent}
+            className={
+              emailSent
+                ? "bg-slate-500 rounded-lg p-2.5 font-medium text-lg"
+                : "bg-gradient-to-br from-red-700 via-orange-500 to-amber-500 hover:text-slate-300 border border-red-500 hover:border-white rounded-lg p-2.5 font-medium text-lg cursor-pointer"
+            }
           >
             Send Message
           </button>
