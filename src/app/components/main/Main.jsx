@@ -6,9 +6,9 @@ import { TypeAnimation } from "react-type-animation";
 const MainPage = () => {
   return (
     <section className="lg:py-16">
-      <div className="grid grid-cols-1 lg:grid-cols-12">
+      <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-8 place-self-center text-center sm:text-left lg:justify-self-start">
-          <h1 className="text-white text-4xl lg:text-8xl lg:leading-normal font-bold mb-4">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span>
               Hello, I'm
               <br />
@@ -44,7 +44,7 @@ const MainPage = () => {
             </Button>
           </div>
         </div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
+        <div className="relative w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
           {/* <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative"> */}
           <Image
             src="/images/sam.jpg"
@@ -53,8 +53,7 @@ const MainPage = () => {
             style={{ width: "auto", height: "auto" }}
             width={300}
             height={300}
-            // className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            className="rounded-3xl"
+            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-3xl"
           />
           {/* </div> */}
         </div>
