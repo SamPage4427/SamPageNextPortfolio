@@ -70,15 +70,16 @@ export const tabData = [
 ];
 
 export const projectsData = [
-  // {
-  //   id: 1,
-  //   title: "SlopGoblin's Web Reference",
-  //   description: "",
-  //   image: "",
-  //   tag: ["All", "Web"],
-  //   git: "",
-  //   preview: "",
-  // },
+  {
+    id: 1,
+    title: "SlopGoblin's Web Reference",
+    description:
+      "Project created while doing non-profit work for SlopGoblins NPO. It utilizes ReactJS, TailwindCSS, HeadlessUI, ViteJS, StorybookJS, and Apollo Client on the frontend, while utilizing Keystone, TypeScript, Prisma, and Apollo GraphQL on the backend.",
+    image: "/images/projects/slopgoblin.png",
+    tag: ["All", "Web"],
+    git: "",
+    preview: "",
+  },
   {
     id: 2,
     title: "NewsExplorer",
@@ -111,16 +112,6 @@ export const projectsData = [
   },
   {
     id: 5,
-    title: "Sam Page Portfolio V1",
-    description:
-      "Front-End portfolio design that utilizes HTML5, CSS3, and JavaScript to create a scaleable mock portfolio.",
-    image: "/images/projects/SPWv1.jpg",
-    tag: ["All", "Web"],
-    git: "https://github.com/SamPage4427/Sam-Page-Website",
-    preview: "https://samjpage.netlify.app",
-  },
-  {
-    id: 6,
     title: "React Pizza Website",
     description:
       "A Front-End React website that utilizes NodeJS, ReactJS and CSS for a Pizzaria. The website includes a home, menu, about, and contact page.",
@@ -130,7 +121,7 @@ export const projectsData = [
     preview: "https://samspizza.netlify.app",
   },
   {
-    id: 7,
+    id: 6,
     title: "2D Java Treasure Adventure",
     description:
       "A 2D Treasure Adventure game created with Java and Pixel Art.",

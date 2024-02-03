@@ -2,8 +2,16 @@
 import Image from "next/image";
 import { Button } from "../button/Button";
 import { TypeAnimation } from "react-type-animation";
+import { saveAs } from "file-saver";
+import Link from "next/link";
 
 const MainPage = () => {
+  const saveFile = () => {
+    saveAs(
+      "https://drive.google.com/uc?export=download&id=1UzgxFKKNDVnT4P6KjczasNsU7Yn0n955",
+      "SamuelPageResume-Software.pdf"
+    );
+  };
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -34,10 +42,18 @@ const MainPage = () => {
             Lorem ipsum dolor sit amet consectetor ...
           </p>
           <div className="mb-4 lg:flex lg:items-center">
-            <Button className="px-6 py-3 mr-5 w-full sm:w-fit bg-gradient-to-br from-red-700 via-orange-500 to-amber-500 text-white hover:text-slate-300">
-              Hire Me
-            </Button>
-            <Button className="px-1 py-1 mt-3 bg-gradient-to-tr from-red-700 via-orange-500 to-amber-500 w-full sm:w-fit hover:bg-[#262626]">
+            <Link
+              href={"https://www.linkedin.com/in/samuel-page-b07722137/"}
+              target="_blank"
+            >
+              <Button className="px-6 py-3 mt-2 mr-5 w-full sm:w-fit bg-gradient-to-br from-red-700 via-orange-500 to-amber-500 text-white hover:text-slate-300">
+                Hire Me
+              </Button>
+            </Link>
+            <Button
+              className="px-1 py-1 mt-3 bg-gradient-to-tr from-red-700 via-orange-500 to-amber-500 w-full sm:w-fit hover:bg-[#262626]"
+              onClick={saveFile}
+            >
               <span className="block bg-[#121212] hover:bg-slate-700 rounded-full px-6 py-3">
                 Download Resume
               </span>
