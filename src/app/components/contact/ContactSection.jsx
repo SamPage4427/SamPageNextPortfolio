@@ -37,7 +37,7 @@ function ContactSection() {
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-8 md:gap-4 relative"
       id="contact"
     >
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-700 via-red-600 to-black rounded-full h-80 w-80 z-0 blur-lg absolute top-12 lg:top-48 lg:-left-6 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2"></div>
+      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-700 via-red-600 to-black rounded-full h-60 w-60 sm:h-80 sm:w-80 z-0 blur-lg absolute top-16 md:top-48 md:-left-6 md:transform md:-translate-x-1/2 md:-translate-y-1/2"></div>
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">Let's Connect!</h5>
         <p className="text-white mb-4 max-w-md">
