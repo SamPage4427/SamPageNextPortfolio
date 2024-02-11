@@ -1,22 +1,28 @@
 "use client";
 import Link from "next/link";
-import NavLink from "./NavLInk";
+import NavLink from "./NavLink";
 import { useState } from "react";
 import { Bars4Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "../menu-overlay/MenuOverlay";
 import { navLinks } from "../../utils/constants";
+import Image from "next/image";
 
 const Nav = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
     <nav
-      className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 bg-[#121212] bg-opacity-100"
+      className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 bg-black bg-opacity-100"
       style={{ zIndex: "1000" }}
     >
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link href={"/"} className="text-2xl md:text-4xl font-semibold">
-          LOGO
+          <Image
+            src="/images/SamPageLogo.png"
+            alt="logo"
+            width={100}
+            height={100}
+          />
         </Link>
         <div className="mobile-menu block lg:hidden">
           {!navbarOpen ? (

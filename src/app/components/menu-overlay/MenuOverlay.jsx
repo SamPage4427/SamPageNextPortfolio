@@ -1,4 +1,4 @@
-import NavLink from "../nav/NavLInk";
+import NavLink from "../nav/NavLink";
 
 function MenuOverlay({ links }) {
   return (

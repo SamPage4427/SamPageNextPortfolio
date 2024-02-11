@@ -37,7 +37,7 @@ function ContactSection() {
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-8 md:gap-4 relative"
       id="contact"
     >
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-700 via-orange-600 to-amber-500 rounded-full h-80 w-80 z-0 blur-lg absolute top-12 lg:top-48 lg:-left-6 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2"></div>
+      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-700 via-red-600 to-black rounded-full h-80 w-80 z-0 blur-lg absolute top-12 lg:top-48 lg:-left-6 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2"></div>
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">Let's Connect!</h5>
         <p className="text-white mb-4 max-w-md">
@@ -69,7 +69,7 @@ function ContactSection() {
               name="email"
               type="email"
               id="email"
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-grey-100 text-sm rounded-lg block w-full p-2.5"
+              className="bg-black border border-[#33353F] placeholder-[#9CA2A9] text-grey-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="john@smith.com"
               required
             />
@@ -85,7 +85,7 @@ function ContactSection() {
               name="subject"
               type="text"
               id="subject"
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-grey-100 text-sm rounded-lg block w-full p-2.5"
+              className="bg-black border border-[#33353F] placeholder-[#9CA2A9] text-grey-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Type here"
               required
             />
@@ -100,7 +100,7 @@ function ContactSection() {
             <textarea
               name="message"
               id="message"
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-grey-100 text-sm rounded-lg block w-full p-2.5"
+              className="bg-black border border-[#33353F] placeholder-[#9CA2A9] text-grey-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Leave message here..."
               required
             />
@@ -111,7 +111,7 @@ function ContactSection() {
             className={
               emailSent
                 ? "bg-slate-500 rounded-lg p-2.5 font-medium text-lg"
-                : "bg-gradient-to-br from-red-700 via-orange-500 to-amber-500 hover:text-slate-300 border border-red-500 hover:border-white rounded-lg p-2.5 font-medium text-lg cursor-pointer"
+                : "bg-gradient-to-br from-red-700 via-red-600 to-black hover:text-slate-300 hover:border-white rounded-lg p-2.5 font-medium text-lg cursor-pointer"
             }
           >
             Send Message

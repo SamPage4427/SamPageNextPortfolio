@@ -1,11 +1,13 @@
 const TabButton = ({ active, selectTab, children }) => {
   const buttonClasses = active
-    ? "text-transparent bg-clip-text bg-gradient-to-br from-amber-500 via-orange-600 to-red-700"
+    ? "text-transparent bg-clip-text bg-gradient-to-br from-black via-red-600 to-red-700 border-b-2 border-gradient-to-br"
     : "text-[#ADB7BE]";
 
   return (
     <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>
+      <p
+        className={`mr-3 mb-2 font-bold hover:text-white text-lg ${buttonClasses}`}
+      >
         {children}
       </p>
     </button>

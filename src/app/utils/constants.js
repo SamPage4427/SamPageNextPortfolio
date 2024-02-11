@@ -142,7 +142,7 @@ export const achievementsList = [
     value: "42",
   },
   {
-    metric: "Certificiations",
+    metric: "Certifications",
     value: "1",
   },
   {
