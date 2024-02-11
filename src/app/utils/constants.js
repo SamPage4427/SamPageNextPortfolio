@@ -70,16 +70,16 @@ export const tabData = [
 ];
 
 export const projectsData = [
-  {
-    id: 1,
-    title: "SlopGoblin's Web Reference",
-    description:
-      "Project created while doing non-profit work for SlopGoblins NPO. It utilizes ReactJS, TailwindCSS, HeadlessUI, ViteJS, StorybookJS, and Apollo Client on the frontend, while utilizing Keystone, TypeScript, Prisma, and Apollo GraphQL on the backend.",
-    image: "/images/projects/slopgoblin.png",
-    tag: ["All", "Web"],
-    git: "",
-    preview: "",
-  },
+  // {
+  //   id: 1,
+  //   title: "SlopGoblin's Web Reference",
+  //   description:
+  //     "Project created while doing non-profit work for SlopGoblins NPO. It utilizes ReactJS, TailwindCSS, HeadlessUI, ViteJS, StorybookJS, and Apollo Client on the frontend, while utilizing Keystone, TypeScript, Prisma, and Apollo GraphQL on the backend.",
+  //   image: "/images/projects/slopgoblin.png",
+  //   tag: ["All", "Web"],
+  //   git: "",
+  //   preview: "",
+  // },
   {
     id: 2,
     title: "NewsExplorer",
