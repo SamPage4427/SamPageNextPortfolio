@@ -27,7 +27,11 @@ function About() {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a software engineer with a passion for creating ...{" "}
+            I am a software engineer with a passion for creating interactive and
+            responsive web applications. I have experience working in React,
+            HTML, JavaScript, CSS, TailwindCSS, NextJS, Apollo GraphQL, MongoDB,
+            and Git. I learn new technologies quickly and am always on the hunt
+            for more knowledge to expand my skill set.
           </p>
           <div className="flex flex-col sm:flex-row justify-start mt-8">
             <TabButton

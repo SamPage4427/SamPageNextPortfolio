@@ -18,7 +18,7 @@ const MainPage = () => {
         <div className="col-span-7 xl:col-span-8 place-self-center text-center sm:text-left lg:justify-self-start">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl xl:text-8xl lg:leading-normal font-extrabold font-serif">
             <span>
-              Hello, I'm
+              Hello, I&apos;m
               <br />
             </span>
             <TypeAnimation
@@ -39,7 +39,7 @@ const MainPage = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-lg lg:text-xl mb-4 font-serif">
-            Lorem ipsum dolor sit amet consectetor ...
+            Committed to creating user-friendly apps and websites.
           </p>
           <div className="mb-4 lg:flex lg:items-center">
             <Link

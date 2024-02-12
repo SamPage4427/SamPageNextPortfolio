@@ -39,10 +39,12 @@ function ContactSection() {
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-700 via-red-600 to-black rounded-full h-60 w-60 sm:h-80 sm:w-80 z-0 blur-lg absolute top-16 md:top-48 md:-left-6 md:transform md:-translate-x-1/2 md:-translate-y-1/2"></div>
       <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">Let's Connect!</h5>
+        <h5 className="text-xl font-bold text-white my-2">
+          Let&apos;s Connect!
+        </h5>
         <p className="text-white mb-4 max-w-md">
-          I'm currently looking for new opportunities, my inbox is always open.
-          I will try my best to reply to any questions and inquiries.
+          I&apos;m currently looking for new opportunities, my inbox is always
+          open. I will try my best to reply to any questions and inquiries.
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href={"https://github.com/SamPage4427"} target="_blank">
