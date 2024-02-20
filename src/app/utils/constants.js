@@ -124,7 +124,7 @@ export const projectsData = [
     id: 6,
     title: "2D Java Treasure Adventure",
     description:
-      "A 2D Treasure Adventure game created with Java and Pixel Art.",
+      "A 2D Treasure Adventure game created with Java and Pixel Art that resembles older treasure games played on the N64 and Sega.(Not Hosted currently)",
     image: "/images/projects/16bit.jpg",
     tag: ["All", "Game"],
     git: "https://github.com/SamPage4427/2DTreasure",
