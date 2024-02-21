@@ -25,11 +25,11 @@ const MainPage = () => {
               sequence={[
                 "Sam Page",
                 3000,
+                "Software Engineer",
+                3000,
                 "Web Developer",
                 3000,
                 "React Developer",
-                3000,
-                "Software Engineer",
                 3000,
               ]}
               wrapper="span"
