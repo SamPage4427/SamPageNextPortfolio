@@ -22,7 +22,7 @@ export const tabData = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2  md:columns-2 lg:columns-3">
         <li>React.js</li>
         <li>JavaScript</li>
         <li>HTML5</li>
@@ -30,7 +30,7 @@ export const tabData = [
         <li>Node.js</li>
         <li>MongoDB</li>
         <li>Express.js</li>
-        <li>Apollo GraphQL</li>
+        <li>GraphQL</li>
         <li>TailwindCSS</li>
         <li>Next.js</li>
         <li>Git</li>
@@ -128,8 +128,58 @@ export const projectsData = [
     image: "/images/projects/16bit.jpg",
     tag: ["All", "Game"],
     git: "https://github.com/SamPage4427/2DTreasure",
-    preview: "/",
+    preview: "",
   },
+  {
+    id: 7,
+    title: "Employee Reimbursement System",
+    description:
+      "An Employee reimbursement system created using Java, JSON, Tomcat, Maven, and PostgreSQL, that utilizes Postman to send requests to the DBeaver server.",
+    image: "/images/projects/Code.jpg",
+    tag: ["All", ""],
+    git: "https://github.com/SamPage4427/SamPageProject1",
+    preview: "",
+  },
+  // {
+  //   id: 8,
+  //   title: "",
+  //   description:
+  //     "",
+  //   image: "",
+  //   tag: ["All", ""],
+  //   git: "",
+  //   preview: "",
+  // },
+  // {
+  //   id: 9,
+  //   title: "",
+  //   description:
+  //     "",
+  //   image: "",
+  //   tag: ["All", ""],
+  //   git: "",
+  //   preview: "",
+  // },
+  // {
+  //   id: 10,
+  //   title: "",
+  //   description:
+  //     "",
+  //   image: "",
+  //   tag: ["All", ""],
+  //   git: "",
+  //   preview: "",
+  // },
+  // {
+  //   id: 11,
+  //   title: "",
+  //   description:
+  //     "",
+  //   image: "",
+  //   tag: ["All", ""],
+  //   git: "",
+  //   preview: "",
+  // },
 ];
 
 export const achievementsList = [
