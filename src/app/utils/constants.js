@@ -74,7 +74,7 @@ export const projectsData = [
     id: 1,
     title: "SlopGoblin's Web Reference",
     description:
-      "Project created while doing non-profit work for SlopGoblins NPO. It utilizes ReactJS, TailwindCSS, HeadlessUI, ViteJS, StorybookJS, and Apollo Client on the frontend, while utilizing Keystone, TypeScript, Prisma, and Apollo GraphQL on the backend.",
+      "Project created while doing non-profit work for SlopGoblins NPO. It utilizes ReactJS, TailwindCSS, HeadlessUI, ViteJS, StorybookJS, and Apollo Client on the frontend, while utilizing Keystone, TypeScript, Prisma, and Apollo GraphQL on the backend. (Still in progress but I am no longer a volunteer for the non-profit)",
     image: "/images/projects/slopgoblin.png",
     tag: ["All", "Web"],
     git: "https://github.com/jahorwitz/slopopedia",

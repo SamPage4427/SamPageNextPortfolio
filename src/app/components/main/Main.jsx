@@ -35,7 +35,7 @@ const MainPage = () => {
               wrapper="span"
               speed={50}
               repeat={Infinity}
-              className="text-transparent bg-clip-text bg-gradient-to-br from-black via-red-600 to-red-7000"
+              className="text-transparent bg-clip-text bg-gradient-to-br from-black via-red-600 to-red-700"
             />
           </h1>
           <p className="text-[#ADB7BE] text-lg lg:text-xl mb-4 font-serif">
