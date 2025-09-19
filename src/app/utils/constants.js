@@ -36,6 +36,9 @@ export const tabData = [
         <li>Git</li>
         <li>Webpack</li>
         <li>HeadlessUI</li>
+        <li>Python</li>
+        <li>C#/ASP.Net</li>
+        {/* <li></li> */}
         {/* <li></li> */}
       </ul>
     ),
@@ -78,6 +81,7 @@ export const projectsData = [
     image: "/images/projects/underconstruction.jpg",
     tag: ["All"],
     git: "https://github.com/SamPage4427",
+    preview: "",
   },
   {
     id: 2,
@@ -87,7 +91,7 @@ export const projectsData = [
     image: "/images/projects/slopgoblin.png",
     tag: ["All", "Web"],
     git: "https://github.com/jahorwitz/slopopedia",
-    // preview: "http://slopopedia.s3-website-us-east-1.amazonaws.com",
+    preview: "",
   },
   {
     id: 3,
@@ -110,7 +114,7 @@ export const projectsData = [
   //   preview: "https://www.wtwr.epicgamer.org",
   // },
   {
-    id: 5,
+    id: 4,
     title: "Around the US",
     description:
       "Project created while studying with the TripleTen Online Bootcamp. It utilizes JavaScript, HTML, and CSS to create a webpage designed for posting images to the website, showing the user what others have posted, deleting only the user added images, and liking posts. The project includes modals for updating the profile picture, the name and description of the user, along with a modal for adding new pictures and confiming if the user wants to delete their pictures.",
