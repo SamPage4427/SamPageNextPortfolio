@@ -72,16 +72,25 @@ export const tabData = [
 export const projectsData = [
   {
     id: 1,
-    title: "SlopGoblin's Web Reference",
+    title: "Under Construction",
     description:
-      "Project created while doing non-profit work for SlopGoblins NPO. It utilizes ReactJS, TailwindCSS, HeadlessUI, ViteJS, StorybookJS, and Apollo Client on the frontend, while utilizing Keystone, TypeScript, Prisma, and Apollo GraphQL on the backend. (Still in progress but I am no longer a volunteer for the non-profit organization)",
-    image: "/images/projects/slopgoblin.png",
-    tag: ["All", "Web"],
-    git: "https://github.com/jahorwitz/slopopedia",
-    preview: "http://slopopedia.s3-website-us-east-1.amazonaws.com",
+      "This portfolio is currently under construction to create a better user experience, while adding more current projects and updating information about me.",
+    image: "/images/projects/underconstruction.jpg",
+    tag: ["All"],
+    git: "https://github.com/SamPage4427",
   },
   {
     id: 2,
+    title: "SlopGoblin's Web Reference",
+    description:
+      "Project created while doing non-profit work for SlopGoblins NPO. It utilizes ReactJS, TailwindCSS, HeadlessUI, ViteJS, StorybookJS, and Apollo Client on the frontend, while utilizing Keystone, TypeScript, Prisma, and Apollo GraphQL on the backend. (website was taken down or moved by the admin. Currently trying to find out more information about the website)",
+    image: "/images/projects/slopgoblin.png",
+    tag: ["All", "Web"],
+    git: "https://github.com/jahorwitz/slopopedia",
+    // preview: "http://slopopedia.s3-website-us-east-1.amazonaws.com",
+  },
+  {
+    id: 3,
     title: "NewsExplorer",
     description:
       "Project created while studying React.js programming with the TripleTen Online Bootcamp. It utilizes ReactJS, NodeJS, ExpressJS, MongoDB and 2 different APIs(an Open Source News API and a created back-end API for storing user and news article information). The website routes between the main page and the saved articles page so the user can interact with their saved articles and delete them if they desire.",
@@ -90,18 +99,18 @@ export const projectsData = [
     git: "https://github.com/SamPage4427/news-explorer-frontend",
     preview: "https://www.newsexplorer.online",
   },
+  // {
+  //   id: 4,
+  //   title: "WTWR: What to Wear?",
+  //   description:
+  //     "Project created while studying React.js programming with the TripleTen Online Bootcamp. It utilizes ReactJS, JavaScript, CSS, NodeJS, ExpressJS and two different API's (a weather API and a created item storing back-end API). The website includes a toggle switch for the change between fahrenheit and celcius, while also routing between the main interface and the user profile depending on if the site logo is clicked(main page) or if the username or avatar is clicked(profile page).",
+  //   image: "/images/projects/whattowear.png",
+  //   tag: ["All", "Web"],
+  //   git: "https://github.com/SamPage4427/se_project_react",
+  //   preview: "https://www.wtwr.epicgamer.org",
+  // },
   {
-    id: 3,
-    title: "WTWR: What to Wear?",
-    description:
-      "Project created while studying React.js programming with the TripleTen Online Bootcamp. It utilizes ReactJS, JavaScript, CSS, NodeJS, ExpressJS and two different API's (a weather API and a created item storing back-end API). The website includes a toggle switch for the change between fahrenheit and celcius, while also routing between the main interface and the user profile depending on if the site logo is clicked(main page) or if the username or avatar is clicked(profile page).",
-    image: "/images/projects/whattowear.png",
-    tag: ["All", "Web"],
-    git: "https://github.com/SamPage4427/se_project_react",
-    preview: "https://www.wtwr.epicgamer.org",
-  },
-  {
-    id: 4,
+    id: 5,
     title: "Around the US",
     description:
       "Project created while studying with the TripleTen Online Bootcamp. It utilizes JavaScript, HTML, and CSS to create a webpage designed for posting images to the website, showing the user what others have posted, deleting only the user added images, and liking posts. The project includes modals for updating the profile picture, the name and description of the user, along with a modal for adding new pictures and confiming if the user wants to delete their pictures.",
@@ -111,7 +120,7 @@ export const projectsData = [
     preview: "https://SamPage4427.github.io/se_project_aroundtheus",
   },
   {
-    id: 5,
+    id: 6,
     title: "React Pizza Website",
     description:
       "A Front-End React website that utilizes NodeJS, ReactJS and CSS for a Pizzaria. The website includes a home, menu, about, and contact page.",
@@ -121,7 +130,7 @@ export const projectsData = [
     preview: "https://samspizza.netlify.app",
   },
   {
-    id: 6,
+    id: 7,
     title: "2D Java Treasure Adventure",
     description:
       "A 2D Treasure Adventure game created with Java and Pixel Art that resembles older treasure games played on the N64 and Sega.(Not Hosted currently)",
@@ -131,7 +140,7 @@ export const projectsData = [
     preview: "",
   },
   {
-    id: 7,
+    id: 8,
     title: "Employee Reimbursement System",
     description:
       "An Employee reimbursement system created using Java, JSON, Tomcat, Maven, and PostgreSQL, that utilizes Postman to send requests to the DBeaver server.",
